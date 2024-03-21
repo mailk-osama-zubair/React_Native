@@ -85,11 +85,12 @@ const Home = ({navigation}) => {
                         WEAR
                     </Text>
                 </View>
-                <View style={styles.shoppingTrolley}>
+                <TouchableOpacity onPress={()=>navigation.navigate('Cards')}
+                 style={styles.shoppingTrolley}>
                     <Image style={styles.TrolleyImage}
                         source={require('../assets/whiteTrolly.png')}>
                     </Image>
-                </View>
+                    </TouchableOpacity> 
             </View>
             <SafeAreaView style={styles.searchbox}>
                 <View style={styles.iconContainer}>
